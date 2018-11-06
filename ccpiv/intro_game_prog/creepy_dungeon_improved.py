@@ -262,8 +262,10 @@ def room2 ():
 			print("Opción errónea")
 
 def room1 ():
+	global corona
+    
 	room_title(1)
-	if corona == True:
+	if corona:
 		print("¡HAS SALIDO VIVO Y CON LA CORONA!")
 		print("¡HAS GANADO!")
 		return 999
@@ -294,7 +296,6 @@ def game_start ():
 	print("")
 	print("¡¡¡Empieza el juego!!!")
 	print("")
-
 	return 1
 
 	
